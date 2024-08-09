@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUTURA BASICA</title>
+</head>
+<body>
+
+    <img src="simbolo.png" alt="simbolo " width="200px" style="flex-direction: row;justify-content: center; align-items: flex-start;">
+   
+    <h1>Definição das estruturas:</h1>
+    <p>
+        <img src="logo html.webp" alt="logo html" width="40pix" >
+        HTML é usado para criar a estrutura e o conteúdo básico da página.<br>
+        <img src="logo css.png" alt="loggo css" width="40pix">
+        CSS é aplicado para definir a aparência e o layout dos elementos HTML.<br>
+        <img src="logo javascript.webp" alt="logo do javascript" width="30pix">
+        JavaScript é usado para adicionar funcionalidades dinâmicas e interativas.
+    </p><br>
+    <hr>
+
+    <h2> * Tag h1 a h6: </h2> 
+    <p>- São utilizadas para definição de títulos. Sendo h1 definida para título e os subsequentes como subtítulos.</p>
+       <h3>Exemplos: </h3> 
+        <h1>Nome - exemplo do h1</h1>
+        <h2>Nome - exemplo do h2 <h2>
+        <h3>Nome - exemplo do h3</h3>
+        <h4>Nome - exemplo do h4</h4>
+        <h5>Nome - exemplo do h5 </h5>
+        <h6>Nome - exemplo do h6</h6>
+    </h2> <br> 
+    <hr>
+
+    <h2> * Tag p: </h2> 
+    <p>- É indicada para escrever pragrafo.</p> <br>
+     <hr>
+
+    <h2> * Listas: </h2> 
+    <p>- São usadas para agrupar uma série de itens. Existem as listas não ordenadas e as ordenadas. </p> 
+    <h3> Exemplos:</h3>
+    <p>Lista Não Ordenda</p> 
+        
+    <ul>
+        <li>arroz</li>
+        <li>feijão</li>
+        <li>macarrão</li>
+        <li>açúcar</li>
+    </ul>
+
+         <p>Lista Ordenada</p>
+    <ol>
+        <li>arroz</li>
+        <li>feijão</li>
+        <li>macarrão</li>
+        <li>açúcar</li>
+    </ol>
+    <hr>
+
+    <h2>* Tabelas:</h2>
+    <p> - As tabelas são definidas com a tag table e sua estrutura é formada pelas as tags th e td. A tag th é definida como o cabeçalho  e a tag td contém os dados da tabela.</p>
+    <h3> Exemplo:</h3>
+    <table border ="2px solid ">
+
+        <thead>
+            <tr>
+                <th>Aluno(a)</th>
+                <th>Curso</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>Engenharia</td>
+                <td>Noite</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Medicina</td>
+                <td>Manhã</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>Ads</td>
+                <td>Tarde</td>
+            </tr>
+            <tr>
+    </table> <br> 
+    <hr>
+
+    <h2> * Formulários: </h2>
+    <p> - Os formulários são criados com a tag form. Existindo o elemento label que associa um texto descritivo a um campo de entrada, imput permite a entrada de texto de uma linha.</p>
+    <h3> Exemplo:</h3>
+
+    <form action="cadastro.php">
+        <fieldset> 
+            <legend><strong><i> DADOS PESSOAIS </i> </strong></legend>
+             <p><label for="inome"> Nome completo:</label>
+                <input type="text" name="nome" id="inome"></p> 
+                <p><label for="idata nascimento">Data nascimento</label>
+                <input type="date" name="Data nascimento" id="idata nascimento"></p>   
+            <p><label for="ipeso"> Peso:</label>
+                <input type="float" name="Peso" id="ipeso"> </p> 
+            <p><label for="ialtura">Altura:</label>
+                <input type="float" name="altura" id="ialtura" required></p>
+            
+            <p><label>Gênero</label><br>
+                <input type="radio" name="Gênero" id="isxmas">
+                <label for="isxmas"> Masculino</label>
+                
+                <input type="radio" name="Gênero" id="Isxfem">
+                <label for="Isxfem">Feminino</label>
+                
+                <input type="radio" name="Gênero" id="isxoutros">
+                <label for="isxoutros"> OUTROS</label> 
+                
+                <p> * Com que frequencia você come frutas? </p>
+                <label for="iop"> OPÇÕES</label>
+                <select name="OPÇÕES" id="iop">    
+                
+                    <option value="" selected>-----Escoha -----</option>
+                    <option> Sempre</option>
+                    <option> Nunca</option>
+                    <option> Raramente</option>
+                </select> 
+
+                <p> * Quais desses alimentos não pode faltar na sua alimentção?</p>
+
+                <input type="checkbox"name="apão" id="iapão"> Pão
+                <input type="checkbox"name="amacarrão" id="iamacarrão"> Macarrão
+                <input type="checkbox"name="averduras" id="iaverduras"> Verduras
+                <input type="checkbox"name="aderivados do leite" id="iaderivados do leite"> Derivados do leite
+                <input type="checkbox" name="acarne" id="iacarne"> Carne
+                <input type="checkbox" name="arefrigerante" id="iarefregerante"> Refrigerante
+                <input type="checkbox" name="asuco natural" id="iasuco natural"> Suco natural
+                <input type="checkbox" name="atubérculos" id="iaturbérculos"> Tubérculos
+                <input type="checkbox" name="afeijão" id="iafeijão"> Feijão
+                <input type="checkbox" name="aembutidos" id="iaembutidos"> Embutidos
+                <input type="checkbox" name="abiscoto" id="iabiscoito"> Biscoito
+                <input type="checkbox" name="abolo" id="iabolo"> Bolo
+                <br>
+                <br>
+                <label><strong><i> Fale um pouco sobre sua rotina de atividades físicas: </i></strong></label><br>
+        <textarea rows="3" style="width: 900px" id="sobre VOCÊ" nome="sobre VOCÊ"></textarea>
+        
+            <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+            </p>
+                
+        </fieldset><br>
+
+        
